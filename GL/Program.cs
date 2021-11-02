@@ -1,4 +1,5 @@
 ﻿using System;
+using Thyme40.BLL;
 
 namespace GL
 {
@@ -6,7 +7,8 @@ namespace GL
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GLAccount acc = new("0400", "Test account");
+            Console.WriteLine(acc);
         }
     }
 }
