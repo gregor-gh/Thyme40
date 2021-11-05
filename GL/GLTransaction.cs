@@ -23,7 +23,7 @@ namespace Thyme40.BLL {
 
     public void ParseTransaction() {
       decimal sum = GLTransactionLines.Sum(line => line.Amount);
-      if(sum!=0) {
+      if (sum != 0) {
         throw new TransactionImbalanceException();
       }
     }
